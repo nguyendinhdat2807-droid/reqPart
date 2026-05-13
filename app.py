@@ -307,7 +307,9 @@ def search_part(username, password, partnumber):
 
     data = extract_table(details_response.text)
 
-    return {
-        "partnumber": partnumber,
-        "data": data
-    }
+    return JSONResponse(
+        contentl={
+            "Partnumber": partnumber,
+            "data": data
+        }
+    )
