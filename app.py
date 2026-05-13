@@ -4,6 +4,7 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 from fastapi import FastAPI
+from fastapi import JSONResponse
 
 app = FastAPI()
 
