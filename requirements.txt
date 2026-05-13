@@ -1,5 +1,4 @@
-json
-urllib.parse
+uvicorn
 requests
-bs4
+beautifulsoup4
 fastapi
