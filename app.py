@@ -4,7 +4,6 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 from fastapi import FastAPI
-from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
@@ -308,9 +307,8 @@ def search_part(username, password, partnumber):
 
     data = extract_table(details_response.text)
 
-    return JSONResponse(
-        contentl={
+    return {
             "Partnumber": partnumber,
             "data": data
-        }
-    )
+    }
+    
