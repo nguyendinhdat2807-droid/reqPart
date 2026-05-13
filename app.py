@@ -291,7 +291,7 @@ def search_part(username, password, partnumber):
     )
 
     if not details_link:
-return {
+        return {
             "error": "details link not found"
         }
 
